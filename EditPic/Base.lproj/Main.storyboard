@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="h7g-WO-xI6">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Edit-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="EditPic" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Image1" translatesAutoresizingMaskIntoConstraints="NO" id="1dF-fa-OmQ">
+                                <rect key="frame" x="0.0" y="64" width="320" height="283"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="nre-ab-gGL">
+                                <rect key="frame" x="0.0" y="352" width="320" height="35"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZLY-4e-CHL">
+                                        <rect key="frame" x="0.0" y="0.0" width="79.5" height="35"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="35" id="46g-xb-r6e"/>
+                                        </constraints>
+                                        <state key="normal" title="" image="rotate icon new"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ifu-HF-Jfy">
+                                        <rect key="frame" x="80.5" y="0.0" width="79" height="35"/>
+                                        <state key="normal" image="crop icon new"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IyN-is-RAb">
+                                        <rect key="frame" x="160.5" y="0.0" width="79.5" height="35"/>
+                                        <state key="normal" image="Blur black 10"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CVT-0S-J8l">
+                                        <rect key="frame" x="241" y="0.0" width="79" height="35"/>
+                                        <state key="normal" image="contrast icon new"/>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="IyN-is-RAb" firstAttribute="baseline" secondItem="CVT-0S-J8l" secondAttribute="baseline" id="d5y-fO-Sf3"/>
+                                    <constraint firstItem="Ifu-HF-Jfy" firstAttribute="baseline" secondItem="IyN-is-RAb" secondAttribute="baseline" id="kII-OE-SVR"/>
+                                </constraints>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="nVK-qg-RPZ">
+                                <rect key="frame" x="16" y="419" width="295" height="76"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Normal" translatesAutoresizingMaskIntoConstraints="NO" id="bNF-U2-MFx">
+                                        <rect key="frame" x="0.0" y="0.0" width="70" height="76"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="70" id="5wJ-Oc-Cbe"/>
+                                            <constraint firstAttribute="height" constant="76" id="t4G-qP-z5h"/>
+                                        </constraints>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Warm" translatesAutoresizingMaskIntoConstraints="NO" id="9CT-lh-ZQV">
+                                        <rect key="frame" x="75" y="0.0" width="70" height="76"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Mars" translatesAutoresizingMaskIntoConstraints="NO" id="0rn-H9-cPT">
+                                        <rect key="frame" x="150" y="0.0" width="70" height="76"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Cold" translatesAutoresizingMaskIntoConstraints="NO" id="uJ7-SH-ggn">
+                                        <rect key="frame" x="225" y="0.0" width="70" height="76"/>
+                                    </imageView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="nre-ab-gGL" secondAttribute="trailing" id="44O-ZP-sVd"/>
+                            <constraint firstItem="1dF-fa-OmQ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="658-S0-i6c"/>
+                            <constraint firstItem="nVK-qg-RPZ" firstAttribute="top" secondItem="nre-ab-gGL" secondAttribute="bottom" constant="32" id="9bZ-AI-d8f"/>
+                            <constraint firstAttribute="trailing" secondItem="1dF-fa-OmQ" secondAttribute="trailing" id="BeS-T1-0FG"/>
+                            <constraint firstItem="1dF-fa-OmQ" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="KAe-nB-bcU"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="1dF-fa-OmQ" secondAttribute="bottom" constant="221" id="O6f-q9-q1W"/>
+                            <constraint firstItem="nre-ab-gGL" firstAttribute="top" secondItem="1dF-fa-OmQ" secondAttribute="bottom" constant="5" id="bYu-XJ-st5"/>
+                            <constraint firstItem="nre-ab-gGL" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="fpr-ZC-48v"/>
+                            <constraint firstItem="nVK-qg-RPZ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="gGT-a4-2nY"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Edit" id="HQ0-SY-bzG">
+                        <barButtonItem key="leftBarButtonItem" title="←" id="wRw-4E-lFT"/>
+                        <barButtonItem key="rightBarButtonItem" title="→" id="aTk-4M-aFG"/>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1113.75" y="123.59154929577466"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="PB2-Zm-mCT">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="h7g-WO-xI6" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="r9L-ak-8LJ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="fnW-nu-Q6L"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mfA-Au-Hol" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="121.875" y="786.97183098591552"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Blur black 10" width="10" height="15"/>
+        <image name="Cold" width="150" height="195"/>
+        <image name="Image1" width="640" height="641"/>
+        <image name="Mars" width="150" height="195"/>
+        <image name="Normal" width="150" height="195"/>
+        <image name="Warm" width="150" height="194"/>
+        <image name="contrast icon new" width="16" height="16"/>
+        <image name="crop icon new" width="15" height="16"/>
+        <image name="rotate icon new" width="15" height="15"/>
+    </resources>
+</document>
